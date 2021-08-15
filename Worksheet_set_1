@@ -1,3 +1,137 @@
+PYTHON-WORKSHEET 1
+Ans 1. C) %
+Ans 2. B) 0
+Ans 3. C) 24
+Ans 4. A) 2
+Ans 5. D) 6
+Ans 6. C) the finally block will be executed no matter if  the try block raises an error or not.
+Ans 7. A) it  is used to raise an exception.
+Ans 8. C) In defining a generator
+
+Ans 9. _abc and abc2 are the valid variable name.
+Ans 10. Yield and raise keyword in python.
+
+Ans 11. #find the factorial of a number answer 11
+import math
+def factorial(n):
+    return(math.factorial(n))
+num= int(input("enter the number"))
+print("factorial of",num,"is",factorial(num))
+
+
+Ans 12. #find prime number or composite number answer 12
+n=input('enter the number you want check')
+try:
+    n=int(n)
+except:
+    print('wrong number')
+    quit()
+if n==1 or n==0:
+    print('This is neither prime nor composite')
+else:
+    c=0
+    for i in range(2,n):
+        if n%i==0:
+            c=c+1
+    if c==0:
+            print("This is a prime number")
+    else:
+            print("This is a composite number")
+
+
+Ans 13. #given string is palindrome or not answer 13
+string=input("Enter a string")
+if(string==string[::-1]):
+    print("This is a palindrome")
+else:
+    print("This is not a palindrome")
+Enter a stringradar
+This is a palindrome
+Ans 14. #get the third side of right-angled triangle from two given sides. answer 14
+def pythagoras(opposite_side,adjacent_side,hypotenuse):
+        if opposite_side==str("x"):
+            return ("opposite ="+str(((hypotenuse**2)-(adjacent_side**2))**0.5))
+        elif adjacent_side == str("x"):
+            return ("adjacent ="+str(((hypotenuse**2)-(opposite_side**2))**0.5))
+        elif hypotenuse == str("x"):
+            return ("hypotenuse ="+str(((opposite_side**2)+(adjacent_side**2))**0.5))
+        else:
+            return "You know the answer"
+print(pythagoras(3,4,'x'))
+print(pythagoras(3,'x',5))
+print(pythagoras('x',4,5))
+
+
+#find the frequency of each characters in given string. answer 15
+string=input("Enter the string:")
+str1=list(string)
+strlist=[]
+for j in str1:
+    if j not in strlist:
+        strlist.append(j)
+        count=0
+        for i in range(len(str1)):
+            if j==str1[i]:
+                count+=1
+                print("{},{}".format(j,count))
+
+
+
+
+STATISTICS WORKSHEET-1
+Ans1. A) True
+Ans2. A) Central Limit Theorem
+Ans3. B) Modeling bounded count data
+Ans4. D) All of the mentioned
+Ans5.  C) Poisson
+Ans6. B) False
+Ans7. B) Hypothesis
+Ans8. A) 0 
+Ans9. C) Outliers cannot conform to the regression relationship
+Ans10. If something is said to follow the normal distribution, it means in the most simple terms that most of the data lies around the average. An easy example is the distribution of test grades in schools. Most people will score around the average, with a few high scores and a few low scores. This means that most people get C's, while only a few get A's and F's. The normal distribution is just one type distribution that has a Bell-curve shape. Others, such as the logistic distribution and t-distribution, have a similar shape but with heavier tails. In those distributions, more data is distributed at the extremes, and less is around the average. If you overlay a set of data with normal distribution and a set of data with t-distribution, you can easily see this difference. Notice that the tails of the t-distribution are larger than the tails of the normal distribution because there are more extremely high and extremely low values. Also notice that the normal distribution has a larger peak in the middle, because it has more values that around the average.
+Ans11. Missing data is huge problem for data analysis because it distorts findings. It’s difficult to be fully confident in the insights when you know that some entries are missing values. Hence , why they must be addressed. According to data scientists, there are three types of missing data. These are Missing Completely at Random(MCAR)- when data is completely missing at random across the dataset with no discernable pattern. These is also Missing At Random(MAR)- when data is not missing randomly, but only within sub-samples of data. Finally, there is a noticeable trend in the way data is missing.
+Data imputation techniques : data scientists use two data imputation. Average imputation and common-point imputation. Average imputation  uses the average value of the responses from other data entries to fill out missing value. However, a word of caution when using this method – it can artificially reduce the variability of the dataset. Common-point imputation , on the other hand, is when the data scientists utilize the middle point or the most commonly chosen value.
+Ans:12. A/B testing is a basic randomized control experiment. It    is a way to compare the two versions of a variable to find out which performs better in a controlled environment. For instance, let’s say you own a company and want to increase the sales of your product. Here, either you can use random experiments, or you can apply scientific and statistical methods. A/B testing is one of the most prominent and widely used statistical tools. In the above scenario, you may divide the products into two parts – A and B. Here A will remain unchanged while you make significant changes in B’s packaging. Now, on the basis of the response from customer groups who used A and B respectively, you try to decide which is performing better.
+
+Ans:13. data scientists use two data imputation. Average imputation and common-point imputation. Average imputation  uses the average value of the responses from other data entries to fill out missing value. However, a word of caution when using this method – it can artificially reduce the variability of the dataset. Common-point imputation , on the other hand, is when the data scientists utilize the middle point or the most commonly chosen value.
+
+Ans:14. Linear regression attempts to model the relationship between two variables by fitting a linear equation to observed data. One variable is considered to be an explanatory variable, and the other is considered to be a dependent variable. For example, a modeler might want to relate the weights of individuals to their heights using a linear regression model.
+Before attempting to fit a linear model to observed data, a modeler should first determine whether or not there is a relationship between the variables of interest. This does not necessarily imply that one variable causes the other (for example, higher SAT scores do not cause higher college grades), but that there is some significant association between the two variables. A scatterplot can be a helpful tool in determining the strength of the relationship between two variables. If there appears to be no association between the proposed explanatory and dependent variables (i.e., the scatterplot does not indicate any increasing or decreasing trends), then fitting a linear regression model to the data probably will not provide a useful model. A valuable numerical measure of association between two variables is the correlation  coefficient , which is a value between -1 and 1 indicating the strength of the association of the observed data for the two variables.
+A linear regression line has an equation of the form Y = a + bX, where X is the explanatory variable and Y is the dependent variable. The slope of the line is b, and a is the intercept (the value of y when x = 0).
+Ans:15. Statistics is a study of presentation, analysis, collection, interpretation and organization of data
+There are two main branches of statistics
+- Inferential Statistic.
+- Descriptive Statistic.
+Inferential Statistics:
+Inferential statistics used to make inference and describe about the population. These stats are more useful when its not easy or possible to examine each member of the population.
+Descriptive Statistics:
+Descriptive statistics are use to get a brief summary of data. You can have the summary of data in numerical or graphycal form.
+
+Machine Learning
+Ans1. a
+Ans2. c
+Ans3. b
+Ans4. c
+Ans5. d
+Ans6. b
+Ans7. c
+Ans8. a
+Ans9. a,d
+Ans10. a,c
+Ans11.a,d
+Ans12. You could use batch gradient descent, stochastic gradient descent, or mini-batch gradient descent. SGD and MBGD would work the best because neither of them need to load the entire dataset into memory in order to take 1 step of gradient descent. Batch would be ok with the caveat that you have enough memory to load all the data.
+The normal equations method would not be a good choice because it is computationally inefficient. The main cause of the computational complexity comes from inverse operation on an (n x n) matrix.
+
+Ans13. The normal equations method does not require normalizing the features, so it remains unaffected by features in the training set having very different scales.
+Feature scaling is required for the various gradient descent algorithms. Feature scaling will help gradient descent converge quicker.
+
+
+
+
+
+
+
+
 #find the factorial of a number answer 11
 import math
 def factorial(n):
